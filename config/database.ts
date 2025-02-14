@@ -6,8 +6,8 @@ export default ({ env }) => {
   const connections = {
     mysql: {
       connection: {
-        host: env('DATABASE_HOST', 'db.uiwkxtgdkvurrdbxvnmd.supabase.co'),
-        port: env.int('DATABASE_PORT', 6543),
+        host: env('DATABASE_HOST', 'aws-0-us-west-1.pooler.supabase.com'),
+        port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'postgres'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'user'),
@@ -24,10 +24,10 @@ export default ({ env }) => {
     },
     postgres: {
       connection: {
-        host: env('DATABASE_HOST', 'db.uiwkxtgdkvurrdbxvnmd.supabase.co'),
-        port: env.int('DATABASE_PORT', 6543),
+        host: env('DATABASE_HOST', 'aws-0-us-west-1.pooler.supabase.com'),
+        port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'postgres'),
-        user: env('DATABASE_USERNAME', 'postgres'),
+        user: env('DATABASE_USERNAME', 'postgres.uiwkxtgdkvurrdbxvnmd'),
         password: env('DATABASE_PASSWORD', 'U6bUcwIAwQysoEQA'),
         ssl: {
           rejectUnauthorized: false,

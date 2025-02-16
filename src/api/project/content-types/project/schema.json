@@ -15,20 +15,19 @@
       "type": "string"
     },
     "description": {
-      "type": "blocks"
+      "type": "blocks",
+      "required": true
     },
     "slug": {
       "type": "uid"
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "files"
       ]
     },
     "repo_url": {
